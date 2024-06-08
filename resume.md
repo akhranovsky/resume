@@ -6,16 +6,21 @@ title: Andrey Khranovsky
 
 Highly versatile software engineer with 15+ years of experience in designing, developing, and deploying software solutions across financial and automotive navigation domains. Proven ability to lead teams, manage complex projects, and deliver high-quality products on time and within budget. Skilled in various programming languages, frameworks, and tools, with a strong track record of optimizing performance and user experience.
 
-## Technical Skills
-**Programming Languages**: Rust, Java, Kotlin, Python, C++
-**Frameworks**: Tokio, Axum, Spring Boot
-**Tools**: Git, Gradle, Grafana
+## Skills
 
-## Soft Skills
 ```Team Leadership```
 ```Communication```
 ```Problem Solving```
-```Agile Methodology```
+```Agile/Scrum```
+
+**Programming Languages**: Rust, Java, Kotlin, Python, C++
+<br />
+**Frameworks**: Tokio, Axum, Spring Boot
+<br />
+**Tools**: Git, Gradle, Grafana
+
+## Soft Skills
+
 
 ## Experience
 
@@ -41,5 +46,5 @@ Highly versatile software engineer with 15+ years of experience in designing, de
 - Integrated native `C++` code into `Android` applications, enabling seamless exposure of navigation engine features for the mobile app and navigation devices.
 
 ## Education
-### Samara State University, Russia
-##### Sep'05 - Feb'11, Master of Science in Mathematics
+### Master of Science in Mathematics
+#### Samara State University, Russia, Sep'05 - Feb'11 
