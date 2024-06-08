@@ -3,8 +3,6 @@ title: Andrey Khranovsky
 ---
 ###### [ [Github](https://www.github.com/akhranovsky) ] - [ [Email](mailto://resume.come825@passmail.net) ]
 
-#### Versatile Software Engineer
-
 Highly versatile software engineer with 15+ years of experience in designing, developing, and deploying software solutions across financial and automotive navigation domains. Proven ability to lead teams, manage complex projects, and deliver high-quality products on time and within budget. Skilled in various programming languages, frameworks, and tools, with a strong track record of optimizing performance and user experience.
 
 ## Skills
