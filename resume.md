@@ -4,39 +4,42 @@ title: Andrey Khranovsky
 ###### [ [Github](https://www.github.com/akhranovsky) ] - [ resume.come825@passmail.net ]
 #### Versatile Software Engineer
 
-Experienced and versatile software engineer with proven track records in financial and automotive navigation software for embedded and mobile platforms. Engineering a full stack of software from requirement gathering and design to the final production. I'm a fast learner so I can dive into unknown areas and solve unusual problems.
+Highly versatile software engineer with 15+ years of experience in designing, developing, and deploying software solutions across financial and automotive navigation domains. Proven ability to lead teams, manage complex projects, and deliver high-quality products on time and within budget. Skilled in various programming languages, frameworks, and tools, with a strong track record of optimizing performance and user experience.
 
-## Skills
-```Software engineering
-```Team leadership```
-```Communication```
-```Problem-solving```
-```Agile methodology```
-
-**Languages**: Rust, Java, Kotlin, Python, C++  
-**Frameworks**: Tokio, Axum, SpringBoot
+## Technical Skills
+**Programming Languages**: Rust, Java, Kotlin, Python, C++
+**Frameworks**: Tokio, Axum, Spring Boot
 **Tools**: Git, Gradle, Grafana
 
+## Soft Skills
+```Team Leadership```
+```Communication```
+```Problem Solving```
+```Agile Methodology```
+
 ## Experience
-### Jamba Juice
-##### Senior Project Manager, January 2015 - Present
-- Led cross-functional teams in the successful delivery of multiple software projects, including a major website redesign and a mobile app launch.
-- Managed budgets of up to $5 million and ensured projects were delivered on time and within scope.
-- Coordinated communication with stakeholders, including executive leadership and development teams.
 
-### PF Chang's
-##### Project Manager, February 2011 - December 2014
-- Managed a portfolio of software and hardware projects, including a new CRM implementation and a network infrastructure upgrade.
-- Worked closely with business analysts and technical teams to ensure project requirements were met and delivered on schedule.
-- Maintained project documentation and provided regular status updates to executive leadership.
+### Backend engineer
+##### BigPay, Malaysia, Oct'22 - Present
 
+- Migrating `Java/Kotlin` microservices (`SpringBoot`) to `Rust` (`Tokio/Axum/OpenAPI`), resulting in significant performance improvements and cost reductions.
+- Integrated EKYC platform, preventing the majority of fraudulent new user sign-ups.
+- Developed transaction monitoring system to identify and prevent fraudulent activities for existing users.
+- Implemented device validation for iOS/Android mobile app, enhancing user security.
 
-## Projects
-**[*resume-md*](http://www.github.com/siph/resume-md)**
+### Expert Software Engineer
+##### TomTom, Netherlands, Oct'20 - Jun'22
 
-Build your resume using markdown and have it generated as a pdf and html.
+- Designed and built an innovative vehicle infotainment platform (TomTom IndiGO) using `Kotlin/Android`.
+- Secured several key business deals through unique feature prototypes.
+
+### Software Engineer
+##### TomTom, Netherlands, Jun'15 - Sep'20
+
+- Optimized loading of massive map data from `SQLite` databases on low-performance devices.
+- Implemented online map data updates, ensuring minimal disruption to the user navigation experience.
+- Integrated native `C++` code into `Android` applications, enabling seamless exposure of navigation engine features for the mobile app and navigation devices.
 
 ## Education
-
-### Reno University
-**Degree:** Bachelor of Science in Computer Science | **Years Attended:** 2016-2019 | **City, State:** Reno, NV
+### Samara State University, Russia
+##### Sep'05 - Feb'11, Master of Science in Mathematics
