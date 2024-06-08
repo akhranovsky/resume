@@ -2,22 +2,20 @@
 title: Andrey Khranovsky
 ---
 ###### [ [Github](https://www.github.com/akhranovsky) ] - [ resume.come825@passmail.net ]
-#### Experienced project manager with a track record of delivering high-quality results on time and within budget.
+#### Versatile Software Engineer
+
+Experienced and versatile software engineer with proven track records in financial and automotive navigation software for embedded and mobile platforms. Engineering a full stack of software from requirement gathering and design to the final production. I'm a fast learner so I can dive into unknown areas and solve unusual problems.
 
 ## Skills
-```Project management```
+```Software engineering
 ```Team leadership```
-```Budget management```
 ```Communication```
 ```Problem-solving```
 ```Agile methodology```
-```Microsoft Project```
-```JIRA```
-```SQL```
 
-**Languages**: Java, Kotlin, Rust  
-**Databases**: Redis, Postgres, Neo4j  
-**Tools**: Spring, Kubernetes, Github-Actions, Linux, Nix, Git, Rest, GraphQL
+**Languages**: Rust, Java, Kotlin, Python, C++  
+**Frameworks**: Tokio, Axum, SpringBoot
+**Tools**: Git, Gradle, Grafana
 
 ## Experience
 ### Jamba Juice
