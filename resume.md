@@ -7,15 +7,9 @@ Highly versatile software engineer with 15+ years of experience in designing, de
 
 ## Skills
 
-```Team Leadership```
-```Communication```
-```Problem Solving```
-```Agile/Scrum```
-
-**Programming Languages**: Rust, Java, Kotlin, Python, C++
-<br />
-**Frameworks**: Tokio, Axum, Spring Boot
-<br />
+**Soft**: Team Leadership, Communication, Problem Solving <br />
+**Programming Languages**: Rust, Java, Kotlin, Python, C++ <br />
+**Frameworks**: Tokio, Axum, Spring Boot <br />
 **Tools**: Git, Gradle, Grafana
 
 ## Experience
@@ -26,7 +20,7 @@ Highly versatile software engineer with 15+ years of experience in designing, de
 - Migrating `Java/Kotlin` microservices (`SpringBoot`) to `Rust` (`Tokio/Axum/OpenAPI`), resulting in significant performance improvements and cost reductions.
 - Integrated EKYC platform, preventing the majority of fraudulent new user sign-ups.
 - Developed transaction monitoring system to identify and prevent fraudulent activities for existing users.
-- Implemented device validation for iOS/Android mobile app, enhancing user security.
+- Implemented device validation for `iOS` and `Android` mobile apps, enhancing user security.
 
 ### Expert Software Engineer
 ##### TomTom, Netherlands, Oct'20 - Jun'22

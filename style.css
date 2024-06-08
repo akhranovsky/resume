@@ -528,8 +528,9 @@ h2 {
 h3 {
     font-size: 18px;
     color: #333;
-    /* -webkit-margin-before: 0.01em; */
-    -webkit-margin-after: -1em;
+    margin-top: 0;
+    margin-bottom: 0;
+    display: inline-block;
 }
 
 h4 {
@@ -543,8 +544,8 @@ h4 {
 h5 {
     font-size: 14px;
     color: #333;
-    -webkit-margin-before: -1em;
-    text-align: right
+    float: right;
+    margin-top: 0;
 }
 
 h6 {
@@ -561,7 +562,9 @@ pre {
 }
 
 ul {
-    padding-left: 30px
+    padding-left: 30px;
+    margin-top: 0;
+    margin-bottom: 0.5em;
 }
 
 ol {
