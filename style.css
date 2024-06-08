@@ -543,8 +543,8 @@ h4 {
 h5 {
     font-size: 14px;
     color: #333;
-    -webkit-margin-before: -1em
-    /* text-align: center */
+    -webkit-margin-before: -1em;
+    text-align: right
 }
 
 h6 {
