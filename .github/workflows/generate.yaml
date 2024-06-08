@@ -1,5 +1,8 @@
 name: "Generate HTML and PDF"
 on:
+  pull_request:
+    types:
+      - opened
   push:
     branches:
       - master
