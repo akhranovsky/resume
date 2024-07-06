@@ -37,6 +37,16 @@ Highly versatile software engineer with 15+ years of experience in designing, de
 - Implemented online map data updates, ensuring minimal disruption to the user navigation experience.
 - Integrated native `C++` code into `Android` applications, enabling seamless exposure of navigation engine features for the mobile app and navigation devices.
 
+### Software Engineer
+##### CQG, Russia, Mar'11-May'15
+
+- Developed trading instruments for the desktop application in C++.
+- Optimized and extended automated tests for the trading engine.
+- Developed synthetic strategy engine for futures.
+- Real-time trading simulator for futures, options and synthetic strategies with instant merging of real trading data.
+
 ## Education
 ### Master of Science in Mathematics
 ##### Samara State University, Russia, Sep'05 - Feb'11 
+
+Master's thesis in Cryptography and Computer Security.
