@@ -15,13 +15,13 @@ Highly versatile software engineer with 15+ years of experience in designing, de
 ## Experience
 
 ### Backend engineer
-##### BigPay, Malaysia, Oct'22 - Present
+##### BigPay, Thailand, Oct'22 - Present
 
 - Migrating `Java/Kotlin` microservices (`SpringBoot`) to `Rust` (`Tokio/Axum/OpenAPI`), resulting in significant performance improvements and cost reductions.
 - Developing identity management system on OAuth 2.0 and JWT.
 - Deployment to GCP with Kubernetes, monitoring with Prometheus and Grafana.
 - Integrated EKYC platforms, preventing the majority of fraudulent new user sign-ups.
-- Developed transaction monitoring system to identify and prevent fraudulent activities for existing users.
+- Developed transaction monitoring system to identify and prevent fraudulent activities.
 - Implemented device validation for `iOS` and `Android` mobile apps, enhancing user security.
 
 ### Expert Software Engineer
