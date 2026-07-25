@@ -33,11 +33,13 @@
             -s \
             -t typst \
             --wrap=none \
-            -V title="Andrey Khranovsky" \
+            -M title="" \
             -V mainfont="Liberation Sans" \
             -V include-before="#set page(margin: (x: 1.5cm, top: 1.5cm, bottom: 2cm), footer: align(right, text(8pt, fill: luma(120), [Generated: $GEN_DATE_SHORT])))" \
+            -V include-before="#align(center)[#text(size: 22pt, weight: \"bold\")[Andrey Khranovsky]]" \
+            -V include-before="#v(-0.3em)" \
             -V include-before="#show regex(\"\\\\\\\\[|\\\\\\\\]\"): it => if it.text == \"\\\\[\" { \"[\" } else { \"]\" }" \
-            -V include-before="#show heading.where(level: 6): it => block(width: 100%, inset: (top: -0.5em, bottom: 1em))[#align(center)[#text(size: 10.5pt, weight: \"regular\")[#it.body]]]" \
+            -V include-before="#show heading.where(level: 6): it => block(width: 100%, inset: (top: 0em, bottom: 0.8em))[#align(center)[#text(size: 10.5pt, weight: \"regular\")[#it.body]]]" \
             -o resume.typ
 
           typst compile resume.typ resume.pdf
