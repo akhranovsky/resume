@@ -31,6 +31,7 @@ jobs:
         cp result/resume/resume.html out/${{ github.actor}}_resume.html
         cp result/resume/resume.pdf out/${{ github.actor}}_resume.pdf
         cp result/resume/resume.md out/${{ github.actor}}_resume.md
+        cp result/resume/style.css out/style.css
     - name: Store Artifacts
       uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
       with:
@@ -50,6 +51,7 @@ jobs:
       run: |
         mkdir public
         cp out/${{ github.actor }}_resume.html public/index.html
+        cp out/style.css public/style.css
     - name: Deploy
       uses: peaceiris/actions-gh-pages@84c30a85c19949d7eee79c4ff27748b70285e453 # v4.1.0
       with:

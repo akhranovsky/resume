@@ -43,6 +43,7 @@
             installPhase = ''
               mkdir -p $out/resume
               cp resume.* $out/resume/
+              cp style.css $out/resume/
             '';
           };
         };
