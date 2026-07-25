@@ -1,69 +1,59 @@
-# Resume-md
+# Resume
 
-This project allows you to write and maintain your resume in markdown. GitHub
-Actions and Nix are used to generate stylized PDF and HTML files based on `resume.md`
-and `style.css` using Pandoc and Typst. The stylized files are found as outputs in the `Releases`
-section, and the HTML file is deployed as a static website using GitHub Pages.
+A reproducible, high-performance resume pipeline built with **Markdown**, **Nix Flakes**, **Pandoc**, and **Typst**.
 
-This project is useful for anyone looking to create a professional-looking
-resume quickly and easily, and is especially beneficial for those with
-technical backgrounds who are familiar with markdown. With this project, you
-can focus on the content of your resume rather than worrying about formatting
-and deployment.
+This repository generates stylized PDF and HTML outputs directly from [`resume.md`](./resume.md) and [`style.css`](./style.css).
 
+## Features
+
+- **Reproducible Builds**: Powered by Nix Flakes (`flake.nix`), ensuring consistent HTML and PDF rendering across environments without manual dependency setup.
+- **Typst & Pandoc Engine**: Converts Markdown directly into Typst markup for fast PDF generation.
+- **Unified Design System**: Matches visual aesthetics (color palettes, font hierarchy, code badges, horizontal alignment) between HTML and PDF.
+- **Automated CI/CD**:
+  - **GitHub Pages**: Automatically publishes the compiled HTML resume.
+  - **GitHub Releases**: Automatically packages and tags timestamped PDF, HTML, and Markdown artifacts on push to `master`.
 
 ## Usage
 
+### Local Build
 
-### GitHub
+To build the HTML and PDF artifacts locally using Nix:
 
-1. Generate a new project using this repository as a template. **Make sure to include all branches!**
-2. Enable Read/Write Workflow permissions under `Settings` -> `Actions` for Pages deployment.
-3. Edit the `resume.md` file with your resume content using Markdown.
-4. Commit and push the changes.
-5. Wait for the GitHub Actions to run. This will generate the PDF and HTML files and deploy
-the HTML file as a static website.
-6. Access the PDF and HTML in the `Releases` section.
-7. Access your resume as a static website by going to `https://<your-github-username>.github.io/<repository-name>`.
-
-
-### Local
-
-`Resume-md` uses [`nix`](https://www.nixos.org) to manage all dependencies and
-to produce build outputs. As a result, any machine with `nix` installed can run
-a simple build command to produce the stylized resumes.
 ```shell
 nix build
 ```
 
-This will place the stylized files along side the original markdown file in
-`result/resume/`:
-```shell
- result
-└──  resume
-    ├──  resume.html
-    ├──  resume.md
-    └──  resume.pdf
+The compiled outputs will be generated in `result/resume/`:
+
+```
+result/resume/
+├── resume.html
+├── resume.md
+└── resume.pdf
 ```
 
-## GitHub Pages
+### Development Environment
 
-GitHub Pages is used to deploy the stylized HTML file as a static site. For this to work,
-the Workflow Permissions MUST be set to read/write and the repository must be public or
-the user a pro user. If you forked this repository or didn't copy the branches during generation,
-you will need to point the pages deployment to the `gh-pages` branch under the `Pages` settings.
+Enter an isolated development shell containing Pandoc and Typst:
 
+```shell
+nix develop
+```
 
-## Customization
+## Repository Structure
 
-You can customize the stylized PDF and HTML output by editing `style.css`.
-
-
-### Default Look
-
-![demo](./demo.png)
-
+- [`resume.md`](./resume.md): Primary resume content source.
+- [`style.css`](./style.css): Custom CSS styles for HTML builds and web preview.
+- [`flake.nix`](./flake.nix): Nix Flake build instructions for Pandoc and Typst.
+- [`.github/workflows/generate.yaml`](./.github/workflows/generate.yaml): GitHub Actions workflow for building, deploying to Pages, and creating releases.
 
 ## Credits
 
-Originally inspired by [vidluther's project](https://github.com/vidluther/markdown-resume).
+Forked from [siph/resume-md](https://github.com/siph/resume-md) by [Chris Dawkins](https://github.com/siph).
+
+## License
+
+This project uses a dual license structure (see [`LICENSE`](./LICENSE)):
+
+- **Code & Infrastructure** (`flake.nix`, `style.css`, workflows): Licensed under the **MIT License** (© Chris Dawkins & Andrey Khranovsky).
+- **Personal Resume Content** ([`resume.md`](./resume.md)): Licensed under **Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)** (© Andrey Khranovsky).
