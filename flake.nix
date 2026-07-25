@@ -13,27 +13,31 @@
           inherit system;
         };
 
-        buildInputs = with pkgs; [
+        nativeBuildInputs = with pkgs; [
           pandoc
           typst
+          liberation_ttf
         ];
 
         buildPhase = ''
           pandoc resume.md \
             -t html -f markdown \
-            -c style.css --embed-resources -s \
+            -c style.css -s \
             -o resume.html
 
           pandoc resume.md \
-            --pdf-engine=typst \
-            -o resume.pdf
+            -t typst \
+            -V mainfont="Liberation Sans" \
+            -o resume.typ
+
+          typst compile resume.typ resume.pdf
         '';
 
       in with pkgs; {
 
         packages = {
           default = stdenvNoCC.mkDerivation {
-            inherit buildInputs buildPhase;
+            inherit nativeBuildInputs buildPhase;
             name = "resume_md";
             src = ./.;
             installPhase = ''
@@ -45,7 +49,7 @@
 
         checks = {
           default = stdenvNoCC.mkDerivation {
-            inherit buildInputs buildPhase;
+            inherit nativeBuildInputs buildPhase;
             name = "resume-md checks";
             src = ./.;
             installPhase = ''
