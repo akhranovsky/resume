@@ -4,20 +4,31 @@ title: Andrey Khranovsky
 
 ###### [ [Github](https://www.github.com/akhranovsky) ] - [ [Email](mailto://resume.come825@passmail.net) ]
 
-Highly versatile software engineer with 15+ years of experience in designing, developing, and deploying software solutions across financial and automotive navigation domains. Proven ability to lead teams, manage complex projects, and deliver high-quality products on time and within budget. Skilled in various programming languages, frameworks, and tools, with a strong track record of optimizing performance and user experience.
+Highly versatile software engineer with 17+ years of experience in designing, developing, and deploying software solutions across financial and automotive navigation domains. Proven ability to lead teams, manage complex projects, and deliver high-quality products on time and within budget. Skilled in various programming languages, frameworks, and tools, with a strong track record of optimizing performance and user experience.
 
 ## Skills
 
-**Soft**: Team Leadership, Communication, Problem Solving \
-**Programming Languages**: `Rust`, `Java`, `Kotlin`, `Python`, `C++` \
-**Frameworks**: `Tokio`, `Axum`, `Spring Boot` \
-**Tools**: `Git`, `Gradle`, `Grafana`, `Prometheus`
+**Leadership & Practices**: Engineering Leadership, System Architecture, Mentoring, AI-Driven Workflows, API Contract Governance \
+**Programming Languages**: `Rust`, `Java`, `Kotlin`, `Python`, `C++`, `SQL` \
+**Frameworks & Standards**: `Tokio`, `Axum`, `gRPC`, `OpenAPI`, `Spring Boot` \
+**Databases & Tools**: `PostgreSQL`, `ClickHouse`, `Redis`, `NATS JetStream`, `GCP`, `Kubernetes`, `Grafana`, `Prometheus`, `Git`
 
 ## Experience
 
+### Lead Backend Engineer / Head of Backend
+
+##### Onside.io, Spain, April'25 - Present
+
+- Headed backend engineering strategy and platform architecture in `Rust` (`Tokio`/`Axum`) and `PostgreSQL`, establishing clear domain boundaries and API contract integrity across core platform services.
+- Mentored domain leads and engineers on system design and idiomatic `Rust`, while integrating AI-assisted workflows into code review and development processes to improve code quality and delivery speed.
+- Architected multi-tenant `Apple Pay` infrastructure and cryptographic key management in `Rust`, securing high-volume transaction processing and tenant data isolation.
+- Designed and delivered an Attribution platform on `ClickHouse` and `NATS JetStream`, enabling real-time event processing and high-throughput analytics.
+- Led integrations with payment service providers including `ACI` and `NomuPay` PSP, enforcing risk telemetry, 3DS card verification, and automated retries to optimize payment success rates.
+- Spearheaded critical App Store compliance refactoring for application package distribution, eliminating architectural HTTP redirect bottlenecks to safeguard primary revenue channels.
+
 ### Backend engineer
 
-##### BigPay, Thailand, Oct'22 - Present
+##### BigPay, Thailand, Oct'22 - Mar'25
 
 - Migrating `Java/Kotlin` microservices (`SpringBoot`) to `Rust` (`Tokio/Axum/OpenAPI`), resulting in significant performance improvements and cost reductions.
 - Developing identity management system on `OAuth 2.0` and `JWT`.
