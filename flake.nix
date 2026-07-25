@@ -43,6 +43,8 @@
             -V include-before="#show regex(\"\\\\\\\\[|\\\\\\\\]\"): it => if it.text == \"\\\\[\" { \"[\" } else { \"]\" }" \
             -V include-before="#show heading.where(level: 6): it => block(width: 100%, inset: (top: 0em, bottom: 0.8em))[#align(center)[#text(size: 10.5pt, weight: \"regular\", fill: rgb(\"#666666\"))[#it.body]]]" \
             -V include-before="#show heading.where(level: 2): it => block(width: 100%, stroke: (bottom: 0.5pt + rgb(\"#e1e4e8\")), inset: (bottom: 4pt), above: 14pt, below: 8pt)[#text(fill: rgb(\"#f39\"), size: 14pt, weight: \"bold\")[#it.body]]" \
+            -V include-before="#show heading.where(level: 3): it => text(fill: rgb(\"#333333\"), size: 11pt, weight: \"bold\")[#it.body]" \
+            -V include-before="#show heading.where(level: 5): it => box(width: 1fr)[#align(right)[#text(fill: rgb(\"#555555\"), size: 10pt, weight: \"regular\")[#it.body]]] + v(0.3em)" \
             -V include-before="#show raw.where(block: false): it => box(fill: rgb(\"#f6f8fa\"), stroke: 0.5pt + rgb(\"#e1e4e8\"), radius: 3pt, inset: (x: 3pt, y: 1.5pt))[#text(size: 8.5pt)[#it.text]]" \
             -o resume.typ
 
