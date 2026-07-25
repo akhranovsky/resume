@@ -21,6 +21,7 @@
 
         buildPhase = ''
           GEN_DATE="$(date -u +'%Y-%m-%dT%H:%M:%SZ')"
+          GEN_DATE_SHORT="$(date -u +'%Y-%m-%d')"
 
           pandoc resume.md \
             -t html -f markdown \
@@ -29,8 +30,10 @@
             -o resume.html
 
           pandoc resume.md \
+            -s \
             -t typst \
             -V mainfont="Liberation Sans" \
+            -V include-before="#set page(footer: align(right, text(8pt, fill: luma(120), [Generated: $GEN_DATE_SHORT])))" \
             -o resume.typ
 
           typst compile resume.typ resume.pdf
