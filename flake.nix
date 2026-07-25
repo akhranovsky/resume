@@ -45,7 +45,7 @@
             -V include-before="#show heading.where(level: 2): it => block(width: 100%, stroke: (bottom: 0.5pt + rgb(\"#e1e4e8\")), inset: (bottom: 4pt), above: 14pt, below: 8pt)[#text(fill: rgb(\"#f39\"), size: 14pt, weight: \"bold\")[#it.body]]" \
             -V include-before="#show heading.where(level: 3): it => v(10pt) + text(fill: rgb(\"#333333\"), size: 11pt, weight: \"bold\")[#it.body]" \
             -V include-before="#show heading.where(level: 5): it => box(width: 1fr)[#align(right)[#text(fill: rgb(\"#555555\"), size: 10pt, weight: \"regular\")[#it.body]]] + v(0.3em)" \
-            -V include-before="#show raw.where(block: false): it => box(fill: rgb(\"#f6f8fa\"), stroke: 0.5pt + rgb(\"#e1e4e8\"), radius: 3pt, inset: (x: 3pt, y: 1.5pt))[#text(size: 8.5pt)[#it.text]]" \
+            -V include-before="#show raw.where(block: false): it => box(fill: rgb(\"#f6f8fa\"), stroke: 0.5pt + rgb(\"#e1e4e8\"), radius: 2.5pt, inset: (x: 2.5pt, y: 1.2pt), baseline: 0.18em)[#text(size: 8pt)[#it.text]]" \
             -o resume.typ
 
           typst compile resume.typ resume.pdf
