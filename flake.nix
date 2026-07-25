@@ -20,9 +20,12 @@
         ];
 
         buildPhase = ''
+          GEN_DATE="$(date -u +'%Y-%m-%dT%H:%M:%SZ')"
+
           pandoc resume.md \
             -t html -f markdown \
             -c style.css -s \
+            -V header-includes="<meta name=\"generation-date\" content=\"$GEN_DATE\"/>" \
             -o resume.html
 
           pandoc resume.md \
