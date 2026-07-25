@@ -8,9 +8,9 @@ Highly versatile software engineer with 15+ years of experience in designing, de
 
 ## Skills
 
-**Soft**: Team Leadership, Communication, Problem Solving <br />
-**Programming Languages**: Rust, Java, Kotlin, Python, C++ <br />
-**Frameworks**: Tokio, Axum, Spring Boot <br />
+**Soft**: Team Leadership, Communication, Problem Solving \
+**Programming Languages**: Rust, Java, Kotlin, Python, C++ \
+**Frameworks**: Tokio, Axum, Spring Boot \
 **Tools**: Git, Gradle, Grafana, Prometheus
 
 ## Experience
