@@ -1,5 +1,5 @@
 {
-  description = "Build you resume with markdown";
+  description = "Build your resume with markdown, pandoc, and typst";
 
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs/nixpkgs-unstable";
@@ -9,28 +9,24 @@
   outputs = { nixpkgs, flake-utils, ... }:
     flake-utils.lib.eachDefaultSystem (system:
       let
-
         pkgs = import nixpkgs {
           inherit system;
-          config = {
-            permittedInsecurePackages = [ "openssl-1.1.1w" ];
-          };
         };
 
         buildInputs = with pkgs; [
           pandoc
-          wkhtmltopdf-bin
+          typst
         ];
 
         buildPhase = ''
           pandoc resume.md \
-          -t html -f markdown \
-          -c style.css --self-contained \
-          -o resume.html
+            -t html -f markdown \
+            -c style.css --embed-resources -s \
+            -o resume.html
 
-          wkhtmltopdf --enable-local-file-access \
-          resume.html \
-          resume.pdf
+          pandoc resume.md \
+            --pdf-engine=typst \
+            -o resume.pdf
         '';
 
       in with pkgs; {
@@ -63,4 +59,5 @@
         };
       });
 }
+
 

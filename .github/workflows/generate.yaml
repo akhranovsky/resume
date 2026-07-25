@@ -4,7 +4,7 @@ on:
     types:
       - opened
     paths:
-      - workflows/*
+      - .github/workflows/*
       - flake.*
       - resume.md
       - style.css
@@ -12,7 +12,7 @@ on:
     branches:
       - master
     paths:
-      - workflows/*
+      - .github/workflows/*
       - flake.*
       - resume.md
       - style.css

@@ -1,9 +1,9 @@
 # Resume-md
 
 This project allows you to write and maintain your resume in markdown. GitHub
-Actions is used to generate stylized PDF and HTML files based on `resume.md`
-and `style.css`. The stylized files are found as outputs in the `Releases`
-section, the HTML file is also deployed as a static website using GitHub Pages.
+Actions and Nix are used to generate stylized PDF and HTML files based on `resume.md`
+and `style.css` using Pandoc and Typst. The stylized files are found as outputs in the `Releases`
+section, and the HTML file is deployed as a static website using GitHub Pages.
 
 This project is useful for anyone looking to create a professional-looking
 resume quickly and easily, and is especially beneficial for those with
